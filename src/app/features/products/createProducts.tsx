@@ -17,11 +17,17 @@ export type Product = {
     price: number
 }
 
-export function createProducts(amount: number) {
+export function createProducts(amount: number, testing: boolean = false, content?: Product) {
     let products = [];
-    for (let i = 0; i < amount; i++) {
-        products.push([getRandomFromList(titles), getRandomFromList(descriptions), getRandomFromList(types), getRandomPrice(1000)]);
-    };
+    if (!testing) {
+        for (let i = 0; i < amount; i++) {
+            products.push([getRandomFromList(titles), getRandomFromList(descriptions), getRandomFromList(types), getRandomPrice(1000)]);
+        };
+    } else {
+        for (let i = 0; i < amount; i++) {
+            products.push([content?.title, content?.description, content?.types, content?.price]);
+        };
+    }
 
     return products;
 };

@@ -1,4 +1,4 @@
-type cartItemProps = {
+export type cartItemProps = {
     id: number,
     title: string,
     amount: number,
