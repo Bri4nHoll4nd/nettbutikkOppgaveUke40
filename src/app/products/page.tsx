@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import ProductList from "@/components/ProductList"
-import { Product, createCart, productsInCart } from "@/components/functions"
 import "@/styles/stylesheet.css"
 import Cart from '@/components/Cart';
 import useCart from '../hooks/useCart';
+import productsInCart from '../features/products/productsInCart';
+import { Product } from '../features/products/createProducts';
 
 export default function ProductPage() {
     const [products, setProducts] = useState<Product[]>([]);

@@ -1,5 +1,3 @@
-import useCart from "@/app/hooks/useCart";
-
 type ProductProps = {
     id: number,
     title: string,

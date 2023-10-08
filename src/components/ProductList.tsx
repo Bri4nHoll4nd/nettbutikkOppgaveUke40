@@ -1,4 +1,3 @@
-import useCart from "@/app/hooks/useCart";
 import Product from "./Product";
 
 type ProductListProps = {

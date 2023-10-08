@@ -1,6 +1,5 @@
-import useCart from "@/app/hooks/useCart";
 import CartItem from "./CartItem";
-import { calculateSum, zeroOutCart } from "./functions";
+import calculateSum from "@/app/features/products/calculateSum";
 
 type cartProps = {
     products: any,

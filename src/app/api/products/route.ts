@@ -1,4 +1,4 @@
-import { createProducts } from "@/components/functions";
+import { createProducts } from "@/app/features/products/createProducts";
 import { NextResponse } from "next/server";
 
 export function GET() {

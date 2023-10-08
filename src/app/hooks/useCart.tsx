@@ -1,7 +1,7 @@
 //Vet ikke om dette er riktig eller ikke.
 
-import { createCart } from "@/components/functions";
 import { useState } from "react";
+import createCart from "../features/products/createCart";
 
 const initialState = {cart: createCart(8), cartOpen: false};
 
